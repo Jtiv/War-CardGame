@@ -59,8 +59,9 @@ class Deck {
     
 }
 
-    let gameLoop = (player1, player2, gameOn=true) => {
-    
+    let gameLoop = (player1, player2, /*gameOn=true*/) => {
+
+// infinite loop while gameon logic is in play so reverting back to single round until debugged.
 //    while(gameOn){
         
         table.push(player1.flip(), player2.flip());
@@ -85,6 +86,9 @@ class Deck {
         else { console.log(`time for war: table contents are such: ${table}`);
         // else{
         //    /*declare war*/ gameOn = false;
+            //    for(let i=0; i < 3; i++){
+            //      gameLoop(player1, player2)
+            //    }
         //    }
         }
   //  }
